@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAcademy.UTest", "..\Cod
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{2757FBD4-C2A8-47FA-8E49-59345985386A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE7BE0C4-B6EF-4124-B5ED-AE5C9F769455}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github", "Github", "{50988EE3-46A9-4E78-BB98-40311C347AAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Terraform", "Terraform", "{D8B7DDF1-F243-435F-A1C1-61E2EE5223D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +35,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CB9181D7-E132-4BE0-9CEC-D4634372333D} = {2757FBD4-C2A8-47FA-8E49-59345985386A}
+		{50988EE3-46A9-4E78-BB98-40311C347AAC} = {EE7BE0C4-B6EF-4124-B5ED-AE5C9F769455}
+		{D8B7DDF1-F243-435F-A1C1-61E2EE5223D1} = {EE7BE0C4-B6EF-4124-B5ED-AE5C9F769455}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EA5E1EC9-EACA-4642-BF00-07D229538025}
