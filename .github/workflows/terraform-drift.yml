@@ -1,4 +1,9 @@
-name: Template for Terraform Drift Detection
+name: Terraform Drift Detection Pipeline
+
+#on:
+#  schedule:
+#    - cron: 0 6 * * * # every night at 6:00 am
+#  workflow_dispatch:
 
 on:
   push:
@@ -11,6 +16,10 @@ on:
     paths:
       - '**/terraform/**'
   workflow_dispatch:
+    inputs:
+      environment-name:
+        type: string
+        default: 'Test'
 
 # Add permissions for GitHub Actions to manage issues
 permissions:
