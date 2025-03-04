@@ -18,10 +18,10 @@ permissions:
   issues: write
 
 env:
-  ARM_CLIENT_ID: ${{ secrets.client-id }}
-  ARM_CLIENT_SECRET: ${{ secrets.client-secret }}
-  ARM_SUBSCRIPTION_ID: ${{ secrets.subscription-id }}
-  ARM_TENANT_ID: ${{ secrets.tenant-id }}
+  ARM_CLIENT_ID: ${{ secrets.TF_AZURE_CLIENT_ID }}
+  ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+  ARM_SUBSCRIPTION_ID: ${{ secrets.TF_AZURE_SUBSCRIPTION_ID }}
+  ARM_TENANT_ID: ${{ secrets.TF_AZURE_ID }}
 
 jobs:
   drift-detection:
