@@ -19,9 +19,9 @@ jobs:
         with:
           dotnet-version: 8.0.x
       - name: Restore dependencies
-        run: dotnet restore CodeAcademy
+        run: dotnet restore
       - name: Build projects and their dependencies
-        run: dotnet build -c Release
+        run: dotnet build
       - name: Cache SonarQube packages
         uses: actions/cache@v4
         with:
