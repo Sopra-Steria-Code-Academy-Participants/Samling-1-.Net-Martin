@@ -1,20 +1,16 @@
 name: Template for Terraform Drift Detection
 
 on:
-  workflow_call:
-    inputs:
-      environment-name:
-        type: string
-        required: true
-    secrets:
-      client-id:
-        required: true
-      client-secret:
-        required: true
-      subscription-id:
-        required: true
-      tenant-id:
-        required: true
+  push:
+    branches: [main]
+    paths:
+      - '**/terraform/**'
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - '**/terraform/**'
+  workflow_dispatch:
 
 # Add permissions for GitHub Actions to manage issues
 permissions:
